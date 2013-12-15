@@ -1,0 +1,66 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 ?** Barossa 1.2 Update Notes: **?\
+\
+This update installs a preloader that waits for the site content to load before showing it.\
+\
+Changes to:\
+\
+style.css\
+index.html\
+scripts.js\
+\
+\
+
+\b Index.html:
+\b0 \
+\
+Add the following under <body> tag:\
+\
+<div id="loader"><div id="progress-bar"></div></div>\
+\
+
+\b Style.css:
+\b0 \
+\
+Add the following at the top of style.css:\
+\
+#loader\{ \
+	opacity: 1; \
+	position: absolute; \
+	width: 100%; \
+	height: 100%; \
+	background-color: #fff; \
+	z-index: 2000;\
+	-webkit-transition: all .5s ease;\
+	-moz-transition: all .5s ease;\
+	transition: all .5s ease;\
+\}\
+#progress-bar\{ \
+	height: 10px; \
+	background-color: #222; \
+	-webkit-transition: width .5s ease;\
+	-moz-transition: width .5s ease;\
+	transition: width .5s ease;\
+	position: relative;\
+	top: 400px;\
+	width: 0px;\
+\}\
+.hide-loader\{ opacity: 0 !important; z-index: -1 !important; \}\
+\
+
+\b Scripts.js:\
+\
+
+\b0 Add the following inside the $(window).ready(function()\{\}   (note: the one at the top)\
+\
+setTimeout(function()\{$('#loader').addClass('hide-loader');\},1000);\
+$('#progress-bar').width('100%');\
+\
+\
+\
+}
