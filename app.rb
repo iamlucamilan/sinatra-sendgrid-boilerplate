@@ -5,20 +5,19 @@ get '/' do
 end
 
 post '/contact' do
-  Pony.mail({
+  Pony.mail(
+    :from => params[:name] + "<" + params[:email] + ">",
     :to => 'milan.luca@gmail.com',
-    :subject => 'Contatto da sito fabioegiuliasisposano.it',
-    :body => "From #{params[:name]} - #{params[:email]}:  #{params[:text]}",
+    :subject => params[:name] + " ti ha scritto da giuliaefabiosisposano.it",
+    :body => params[:message],
     :via => :smtp,
     :via_options => {
-        :address => 'smtp.sendgrid.net',
-        :port => '587',
-        :domain => 'heroku.com',
-        :user_name => ENV['SENDGRID_USERNAME'],
-        :password => ENV['SENDGRID_PASSWORD'],
-        :authentication => :plain,
-        :enable_starttls_auto => true
-      }
-    :from => "#{params[:email]}"
-  })
+      :address              => 'smtp.sendgrid.net',
+      :port                 => '587',
+      :enable_starttls_auto => true,
+      :user_name            => ENV['SENDGRID_USERNAME'],
+      :password             => ENV['SENDGRID_PASSWORD'],
+      :authentication       => :plain,
+      :domain               => ENV['SENDGRID_DOMAIN']
+    })
 end
