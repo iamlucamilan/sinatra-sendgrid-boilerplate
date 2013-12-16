@@ -9,7 +9,7 @@ post '/contact' do
     :from => params[:name] + "<" + params[:email] + ">",
     :to => 'milan.luca@gmail.com',
     :subject => params[:name] + " ti ha scritto da giuliaefabiosisposano.it",
-    :body => params[:message],
+    :body => params[:text],
     :via => :smtp,
     :via_options => {
       :address              => 'smtp.sendgrid.net',
