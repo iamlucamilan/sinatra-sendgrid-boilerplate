@@ -70,13 +70,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .btn{
-	border: 1px solid #222;
-	border-right: 3px solid;
-	border-bottom: 3px solid;
 	padding: 15px;
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
+	background-color: #222;
+	color: #FFF;
 }
 
 .btn:hover{
