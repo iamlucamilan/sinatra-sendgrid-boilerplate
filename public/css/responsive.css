@@ -22,7 +22,14 @@
 		-webkit-columns: 100px 1;
 		-moz-columns: 100px 1;
 	}
-	
+	.slider-tile {
+		height: 270px;
+	}
+
+	.slider-tile .hr {
+		margin-bottom: 22px;
+	}
+
 	.team-img-holder img{ width: 50% }
 	.service{ margin-bottom: 11px; }
 	.services-row{ margin-bottom: 0px; }
@@ -41,8 +48,8 @@
 }
 
 /****************** TABLETS (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
+@media only screen
+and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 
 	#clients{  background-attachment: scroll; }
@@ -51,9 +58,9 @@ and (max-device-width : 1024px) {
 }
 
 /***************** TABLETS (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : portrait) {
 
 	.navigation li{ margin-right: 32px; }
@@ -67,9 +74,9 @@ and (orientation : portrait) {
 }
 
 /***************** TABLETS (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : landscape) {
 
 	#home-slider .slides li{
