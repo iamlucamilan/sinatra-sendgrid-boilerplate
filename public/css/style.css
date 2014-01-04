@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #quote-divider{
-	background: url('../img/home_prova_giuliaefabio.jpg');
+	background: url('../img/home/frase_home_inviti_demo.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #clients{
-	background:url('http://lorempixel.com/1200/800/food/');
+	background:url('../img/home/hashtag_HOME_HASHTAG.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
