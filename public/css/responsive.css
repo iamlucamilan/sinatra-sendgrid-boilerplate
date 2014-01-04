@@ -14,7 +14,7 @@
 	}
 	.navigation li a{ float: left; }
 
-	.tile-wrapper{ width: 100%; }
+	.tile-wrapper{width: 250px; }
 	#home-slider .slides li{ padding-top: 50px; padding-bottom: 50px; }
 	.slider-bg{ max-width: 200%; }
 	#about-text{
@@ -23,12 +23,16 @@
 		-moz-columns: 100px 1;
 	}
 	.slider-tile {
-		height: 270px;
+		height: 230px;
+		padding-top: 20px;
 	}
 
 	.slider-tile .hr {
 		margin-bottom: 22px;
 	}
+
+	h5#logo { font-size: 0.8em; letter-spacing: 5px; }
+
 
 	.team-img-holder img{ width: 50% }
 	.service{ margin-bottom: 11px; }
@@ -54,6 +58,10 @@ and (max-device-width : 1024px) {
 
 	#clients{  background-attachment: scroll; }
 	#quote-divider{ background-attachment: scroll; }
+	.slider-tile {
+		height: 250px;
+	}
+
 
 }
 
@@ -70,7 +78,7 @@ and (orientation : portrait) {
 	.work-img-holder{ height: 220px; }
 	#form-name{ width: 70%; }
 	#form-email{ width: 70%; }
-
+	#logo { font-size: 0.8em; }
 }
 
 /***************** TABLETS (landscape) ----------- */

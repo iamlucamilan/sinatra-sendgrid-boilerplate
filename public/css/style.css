@@ -250,6 +250,8 @@ h1, h2, h3, h4, h5, h6{
 
 #logo{
 	padding-top: 32px;
+	position: relative;
+	left: -13px;
 }
 
 /***************** HOME ***************/
@@ -324,6 +326,7 @@ h1, h2, h3, h4, h5, h6{
 .slider-tile h5{
 	margin-top: 11px;
 	margin-bottom: 22px;
+	font-size: 1.125em;
 }
 
 .slider-tile .hr{
@@ -448,6 +451,7 @@ h1, h2, h3, h4, h5, h6{
 
 .open-service a {
 	color: #222;
+	text-decoration: underline;
 }
 
 .open-service .hr{
@@ -563,8 +567,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .project-img-holder{
-	width: 630px;
-	height: 630px;
+	width: 450px;
+	height: 450px;
 	overflow: hidden;
 	margin: 0px auto;
 }
